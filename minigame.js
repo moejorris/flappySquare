@@ -21,8 +21,17 @@ window.addEventListener("mousedown", function() //listens for mouseclick. sets b
         game.startUpdate();
     }
     jump = true;
-}
-)
+})
+
+window.addEventListener("touchstart", function()
+{
+    if(player.speedY == 0)
+    {
+        game.startUpdate();
+    }
+    jump = true;
+})
+
 
 /////////////////////////////////////
 //OBJECTS
